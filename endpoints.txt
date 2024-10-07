@@ -1,0 +1,42 @@
+sing-in (username, passwd)
+
+sing-up (username, email, psswd, confirm passwd)
+
+create-posts (
+	autor: id,
+	image,
+	description
+)
+
+list-posts (
+	autor: username, avatar,
+	number-likes,
+	imagem	
+)
+
+delete-post (id)
+
+update-post (id
+	image,
+	description)
+
+list-profile (
+	username,
+	avatar,
+	number-posts,
+	bio,
+	post-list: images
+)
+
+edit profile (
+	avatar,
+	name,
+	username,
+	bio,
+	email,
+	gender
+)
+
+upload (
+	image
+)
