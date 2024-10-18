@@ -1,12 +1,12 @@
 require('dotenv').config()
-import express from 'express'
-import routes from './routes'
+require('./database/index')
+const express = require('express')
+const routes = require('./routes.js')
 
 const app = express()
 app.use(express.json())
-app.use(routes)
 
-const PORT: any = process.env.PORT
+const PORT = process.env.PORT
 app.listen(PORT, ()=>{
     console.log(`Server on in port ${PORT}`)
 })
